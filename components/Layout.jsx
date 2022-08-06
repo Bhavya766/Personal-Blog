@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import SideBar from "./Sidebar";
+import SearchBar from "./SearchBar";
 
 const Layout = ({ children }) => {
   return (
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
         <Navbar />
       </header>
       <div className="main">
+        <SearchBar />
         <main className="main-container">{children}</main>
         <footer>
           <Footer />

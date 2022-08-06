@@ -17,14 +17,6 @@ export default {
       },
     },
     {
-      name: "backgroundImage",
-      title: "Background Image",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    },
-    {
       name: "description",
       title: "description",
       type: "string",
