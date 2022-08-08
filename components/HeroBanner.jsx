@@ -12,15 +12,15 @@ const HeroBanner = ({
       <div className="banner-container">
         <div className="banner-text">
           <h1 className="banner-title">{title}</h1>
-          <p className="banner-description">{description}</p>
+          <p className="banner-description light">{description}</p>
           <Link href="">
-            <button type="button">{buttonText}</button>
+            <button type="button" className="hero-button">
+              {buttonText}
+            </button>
           </Link>
         </div>
         <div className="hero-image">
           <img
-            width={500}
-            height={500}
             src={urlFor(image)}
             alt="pyramid"
             className="hero-banner-image"
