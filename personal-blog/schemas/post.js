@@ -60,6 +60,7 @@ export default {
   preview: {
     select: {
       title: "title",
+      description: "description",
       author: "author.name",
       media: "mainImage",
     },

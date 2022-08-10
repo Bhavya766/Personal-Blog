@@ -26,5 +26,11 @@ export default {
       title: "ButtonText",
       type: "string",
     },
+    {
+      name: "referencePost",
+      title: "refrenced-post",
+      type: "reference",
+      to: { type: "post" },
+    },
   ],
 };

@@ -2,7 +2,6 @@ import Head from "next/head";
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import SideBar from "./Sidebar";
 import SearchBar from "./SearchBar";
 
 const Layout = ({ children }) => {
@@ -20,13 +19,12 @@ const Layout = ({ children }) => {
       <nav className="navbar">
         <Navbar />
       </nav>
+      <SearchBar />
       <main className="main">
-        <SearchBar />
         <main className="main-container">{children}</main>
         <footer>
           <Footer />
         </footer>
-        <SideBar />
       </main>
     </div>
   );

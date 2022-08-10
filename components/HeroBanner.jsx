@@ -4,22 +4,22 @@ import React from "react";
 import { urlFor } from "../lib/client";
 
 const HeroBanner = ({
-  bannerData: { title, image, description, buttonText },
+  bannerData: { _id, title, image, description, buttonText, slug },
 }) => {
   return (
     <div className="hero-banner">
-      <h1 className="header"> Article of The Week</h1>
+      <h1 className="header banner-headline"> Article of The Week</h1>
       <div className="banner-container">
-        <div className="banner-text">
+        <div className="banner-child banner-text">
           <h1 className="banner-title">{title}</h1>
           <p className="banner-description light">{description}</p>
-          <Link href="">
+          <Link href={`/posts/${slug.current}`}>
             <button type="button" className="hero-button">
               {buttonText}
             </button>
           </Link>
         </div>
-        <div className="hero-image">
+        <div className="banner-child">
           <img
             src={urlFor(image)}
             alt="pyramid"
