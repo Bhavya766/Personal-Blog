@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 import { urlFor } from "../lib/client";
 
@@ -21,23 +20,23 @@ const PostCard = ({
       <Link href={`/posts/${slug.current}`}>
         <div className="post-card">
           <div className="image-div">
-            <Image
+            <img
               src={urlFor(mainImage)}
               width={400}
               height={200}
               alt="post-image"
               className="post-image"
-            />
+            ></img>
           </div>
           <div className="post-card-text">
             <p className="post-card-title">{title}</p>
             <p className="post-card-desc">{description}</p>
             <div className="post-card-author">
-              <Image
+              <img
                 src={urlFor(authorImage)}
                 alt="author-image"
                 className="post-card-author-image"
-              />
+              ></img>
               <p className="post-card-author-name">
                 <span className="light">by </span>
                 {authorName}

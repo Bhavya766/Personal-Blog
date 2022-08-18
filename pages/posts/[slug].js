@@ -1,17 +1,16 @@
 import React from "react";
 import { PortableText } from "@portabletext/react";
 import { client, urlFor } from "../../lib/client";
-import Image from "next/image";
 
 const FullPost = ({ post }) => {
   const portableComponents = {
     types: {
       image: ({ value }) => (
-        <Image
+        <img
           className="article-illustations"
           src={value.imageUrl}
           alt="body-image"
-        />
+        ></img>
       ),
     },
   };
@@ -30,11 +29,11 @@ const FullPost = ({ post }) => {
         ))}
       </div>
       <div className="article-image">
-        <Image
+        <img
           src={urlFor(post.mainImage)}
           className="article-image"
           alt="primary-image"
-        />
+        ></img>
       </div>
       <div className="article-body">
         <PortableText
