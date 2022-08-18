@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 import { urlFor } from "../lib/client";
@@ -20,11 +21,11 @@ const HeroBanner = ({
           </Link>
         </div>
         <div className="banner-child">
-          <img
+          <Image
             src={urlFor(image)}
             alt="pyramid"
             className="hero-banner-image"
-          ></img>
+          />
         </div>
       </div>
     </div>
