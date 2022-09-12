@@ -19,7 +19,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link href="">
+          <Link href="/">
             <a className="nav-link">
               <div className="link-svg">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
